@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div>
+                <h1>Lista de Tarefas</h1>
+                <p>Organize suas tarefas de forma simples.</p>
+            </div>
+
+            <button id="tema" class="botao-tema" aria-label="Alternar tema">
+                🌙
+            </button>
+
+        </header>
+
+        <div class="entrada">
+
+            <input
+                type="text"
+                id="tarefa"
+                placeholder="Digite uma tarefa..."
+                maxlength="100"
+            >
+
+            <button id="adicionar">
+                Adicionar
+            </button>
+
+        </div>
+
+        <div class="informacoes">
+
+            <span id="contador">0 tarefas</span>
+
+            <button id="limparConcluidas">
+                Limpar concluídas
+            </button>
+
+        </div>
+
+        <div class="filtros">
+
+            <button class="filtro ativo" data-filtro="todas">
+                Todas
+            </button>
+
+            <button class="filtro" data-filtro="pendentes">
+                Pendentes
+            </button>
+
+            <button class="filtro" data-filtro="concluidas">
+                Concluídas
+            </button>
+
+        </div>
+
+        <ul id="lista"></ul>
+
+        <p id="mensagem" class="mensagem">
+            Nenhuma tarefa encontrada.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
